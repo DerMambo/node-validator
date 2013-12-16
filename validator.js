@@ -335,7 +335,7 @@
         decode: decode
     }
 
-    var Validator = exports.Validator = function() {}
+    Validator = exports.Validator = function() {}
 
     Validator.prototype.check = function(str, fail_msg) {
         this.str = typeof( str ) === 'undefined' || str === null || (isNaN(str) && str.length === undefined) ? '' : str+'';
